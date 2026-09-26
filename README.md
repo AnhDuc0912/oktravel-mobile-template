@@ -57,3 +57,7 @@ Xem trực tiếp: https://anhduc0912.github.io/oktravel-mobile-template/#invoic
 Mục Đặt chỗ có nút xem mẫu hóa đơn và nút xem hóa đơn của từng đơn. Sau khi đặt mẫu, có thể mở hóa đơn ngay. Hóa đơn hiển thị mã đặt chỗ, khách hàng, dịch vụ, ngày nhận/trả phòng (lưu trú), số lượng, phí giao hàng (đặc sản), tổng và số tiền còn thanh toán. Đơn cũ thiếu thông tin hiển thị “Chưa ghi nhận”.
 
 Bản demo cho chuyển trạng thái đã/chưa thanh toán; đơn tạo mới luôn chưa thanh toán. Nút In / Lưu PDF mở hộp thoại in của trình duyệt. Phiếu chỉ minh họa giao diện, không phải hóa đơn thuế.
+
+## Hotline
+
+Hai số lấy từ API công khai của web `https://oktravel.vn/api/hotlines`: 0928132828 và 0929132929. Hiển thị trên thanh điều hướng, mục hỗ trợ và hóa đơn; liên kết `tel:` mở ứng dụng gọi điện.
