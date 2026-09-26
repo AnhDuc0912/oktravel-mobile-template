@@ -34,7 +34,7 @@ Truy cập http://localhost:4173. Điện thoại hiển thị toàn màn hình;
 
 Các nhóm dịch vụ lấy từ các route của `ERAS.oktravel-web/src/app/[locale]`, gồm cả resort, villa và căn hộ. Trang chủ hiển thị một hàng Khách sạn, Tour, Vé máy bay và nút ba chấm “Thêm”. Nút này mở đầy đủ dịch vụ, cẩm nang và ưu đãi trong bảng chọn từ dưới lên.
 
-Có danh sách kết quả, lọc dịch vụ, chi tiết, yêu thích và quản lý đơn mẫu. Yêu thích/đơn lưu trong localStorage. Thông tin liên hệ và tên hành khách chỉ dùng để duyệt biểu mẫu, không lưu trong đơn mẫu.
+Có danh sách kết quả, lọc dịch vụ, chi tiết, yêu thích và quản lý đơn mẫu. Yêu thích/đơn lưu trong localStorage. Thông tin liên hệ và địa chỉ nhận hàng được lưu cùng đơn mẫu trong localStorage để hiển thị hóa đơn; không gửi lên server. Tên hành khách chỉ dùng để duyệt biểu mẫu. Nên dùng thông tin giả khi thử giao diện.
 
 ## Thiết kế và phạm vi
 
@@ -49,3 +49,11 @@ Màu lấy theo logo mặc định: nâu #654930, kem #F3EAD9, vàng đồng #BA
 - `app.js`: danh mục dịch vụ, dữ liệu mẫu, màn hình, tìm kiếm, đặt dịch vụ và lưu trạng thái trong cùng một tệp khởi tạo.
 - `styles.css`: giao diện responsive.
 - `assets/`: logo và ảnh.
+
+## Hóa đơn booking
+
+Xem trực tiếp: https://anhduc0912.github.io/oktravel-mobile-template/#invoice/demo
+
+Mục Đặt chỗ có nút xem mẫu hóa đơn và nút xem hóa đơn của từng đơn. Sau khi đặt mẫu, có thể mở hóa đơn ngay. Hóa đơn hiển thị mã đặt chỗ, khách hàng, dịch vụ, ngày nhận/trả phòng (lưu trú), số lượng, phí giao hàng (đặc sản), tổng và số tiền còn thanh toán. Đơn cũ thiếu thông tin hiển thị “Chưa ghi nhận”.
+
+Bản demo cho chuyển trạng thái đã/chưa thanh toán; đơn tạo mới luôn chưa thanh toán. Nút In / Lưu PDF mở hộp thoại in của trình duyệt. Phiếu chỉ minh họa giao diện, không phải hóa đơn thuế.
